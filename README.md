@@ -113,12 +113,10 @@ This a comprehensive stock portfolio analytic tool that gives new users to the s
 
 
 
+# [Project 1 - Analyzation of Tariffs in the United States([https://drive.google.com/file/d/1nDogpm4zgvAgjSiDvB5WUJTseWvjF-h3/view?usp=drive_link](https://github.com/hardyek/tarrifs/tree/760f440bf06a611cb3371aec89fe2ab7263ab5f9/datasets/model1))
 
 
-
-
-
-# [Project 1 - US Apartments](https://github.com/Rsiddharth54/U.S-Apartments-Project)
+# [Project 2 - US Apartments](https://github.com/Rsiddharth54/U.S-Apartments-Project)
 Abstract ----
 The purpose of this project was to learn the basics of machine learning and to implement new data visualization techinques I wanted to play around with more. The dataset that featured US Apartments and their characteristics was a useful way to learn and utilize these concepts.
 
