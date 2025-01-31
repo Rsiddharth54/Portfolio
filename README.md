@@ -34,6 +34,21 @@
 <!-- Work Experience Section -->
 <h2 style="font-family: 'Courier New', Courier, monospace; color: #0072ff;">💼 Relevant Work Experience</h2>
 <p style="font-size: 1.1em;">
+    <strong>Analyst - Castore Consulting  </strong> (October 2024- February 2025) <br>
+    Castore Consulting is the largest pro-bono advisory affiliated with the London School of Economics. Leveraging the diverse talents and academic excellence of our top-tier student teams, we equip growth-phase start-ups with a competitive edge. We specialise in strategic challenges related to scaling, international expansion, and capital acquisition. We cater to clients worldwide, spanning a diverse range of industries.
+</p>
+
+<p style="font-size: 1.1em;">
+    <strong>Data Science Project Lead - London School of Economics </strong> (October 2024- February 2025) <br>
+    Led 4 Data Science BSc students on a machine learning algorithm to predict crop prices in 2025. Presented to department of statistics and data science at LSE
+</p>
+
+<p style="font-size: 1.1em;">
+    <strong>Consulting Intern - Saba Consulting LSE</strong> (October 2024 - January 2025) <br>
+    SABA Junior Consulting is a student consulting firm that allows handpicked students from the London School of Economics and Political Science (LSE) to offer high-quality services tailored to your organisation’s needs at competitive prices. We are part of the Junior Enterprises Europe network. Our previous experiences include but are not limited to consulting, article writing, market research, professional outreach, and translation.SABA Junior Consulting is a student consulting firm that allows handpicked students from the London School of Economics and Political Science (LSE) to offer high-quality services tailored to your organisation’s needs at competitive prices. We are part of the Junior Enterprises Europe network. Our previous experiences include but are not limited to consulting, article writing, market research, professional outreach, and translation.
+</p>
+
+<p style="font-size: 1.1em;">
     <strong>Research Intern - Georgetown University</strong> (May - August 2024) <br>
     Spatial Program: Participated in research projects funded by the NSA and NSF. Focused on building a predictive stock portfolio analytic model using time series and web scraping.
 </p>
