@@ -272,7 +272,7 @@ body {
 }
 
 .project-card a {
-    color: #00ff9f;
+    color: #ff6b35;
     text-decoration: none;
     font-weight: 500;
 }
@@ -321,7 +321,7 @@ body {
 }
 
 .writing-card a {
-    color: #00ff9f;
+    color: #ff6b35;
     text-decoration: none;
     font-weight: 500;
 }
@@ -678,19 +678,19 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: #00ff9f;
+    color: #ff6b35;
     text-decoration: none;
     font-weight: 500;
     font-size: 0.9rem;
     padding: 0.5rem 1rem;
-    border: 1px solid rgba(0, 255, 159, 0.3);
+    border: 1px solid rgba(255, 107, 53, 0.3);
     border-radius: 6px;
     transition: all 0.3s ease;
 }
 
 .certification-link:hover {
-    background: rgba(0, 255, 159, 0.1);
-    border-color: #00ff9f;
+    background: rgba(255, 107, 53, 0.1);
+    border-color: #ff6b35;
     transform: translateY(-2px);
 }
 
