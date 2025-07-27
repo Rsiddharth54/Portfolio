@@ -234,3 +234,167 @@ function addCardAnimations() {
 
 // Initialize card animations
 setTimeout(addCardAnimations, 1000);
+
+// Chatbot Knowledge Base and Functionality
+const chatbotKnowledge = {
+    // Personal Information
+    "who are you": "I'm Rishi Siddharth, a data scientist and innovator building the future through data and systems. I'm currently pursuing a BS in Data Science with an International Business Minor at American University and the London School of Economics.",
+    
+    "what do you do": "I work as a Product Intern at Intermezzo.ai, building the future of global payroll through AI. I also do research with Georgetown University, NSF, and NSA, developing predictive models using AI and sentiment analysis.",
+    
+    "education": "I'm pursuing a BS in Data Science with an International Business Minor. I study at both American University and the London School of Economics, giving me a unique international perspective on data science and business.",
+    
+    "school": "I attend American University and the London School of Economics, studying Data Science with an International Business Minor.",
+    
+    // Experience
+    "experience": "My experience includes: Product Intern at Intermezzo.ai (2024-Present), Research Intern at Georgetown University/NSF/NSA (2024), Growth role at NEKTR Beverage Company (2024-Present), Data Science Project Lead at Data Science Society (2025), and various consulting and leadership roles since 2021.",
+    
+    "work": "I currently work as a Product Intern at Intermezzo.ai, where I'm building AI-powered global payroll solutions. I also do research with Georgetown University, NSF, and NSA on predictive modeling.",
+    
+    "internship": "I have several internships: Product Intern at Intermezzo.ai (current), Research Intern with Georgetown University/NSF/NSA, and I'm helping with growth at NEKTR Beverage Company.",
+    
+    "nektr": "I'm helping a friend grow NEKTR, a beverage company making mad honey as an alternative to alcohol. You can check them out at drinknektr.com!",
+    
+    // Skills
+    "skills": "My technical skills include: Python, SQL, AWS, Databricks, PyTorch, Machine Learning, MPC, OpenCV, TensorFlow, PIL, Data Analysis, Statistical Modeling, and Data Visualization.",
+    
+    "technologies": "I work with Python, SQL, AWS, Databricks, PyTorch, TensorFlow, OpenCV, and various data analysis and machine learning tools.",
+    
+    "programming": "I'm proficient in Python and SQL, with experience in machine learning frameworks like PyTorch and TensorFlow.",
+    
+    "machine learning": "I have experience with PyTorch, TensorFlow, and various machine learning techniques including predictive modeling, sentiment analysis, and computer vision.",
+    
+    // Projects
+    "projects": "My projects include: Luxembourg Stock Exchange API integration, Inflation Analysis with historical economic data, Economy Classification research, Portfolio website, and Fullgrip.AI startup project.",
+    
+    "github": "You can find my projects on GitHub at github.com/Rsiddharth54. My main projects include Luxembourg Stock Exchange, Inflation Analysis, Economy Classification research, and more.",
+    
+    "research": "I've conducted research on trade tariffs impact on soybean markets, economy classification criteria, and predictive modeling for inflation and interest rates.",
+    
+    // Certifications
+    "certifications": "I have AWS-Databricks Cloud Integrations and Databricks Fundamentals Accreditation certifications from Databricks Academy (2024).",
+    
+    "aws": "I'm certified in AWS-Databricks Cloud Integrations through Databricks Academy.",
+    
+    "databricks": "I have both AWS-Databricks Cloud Integrations and Databricks Fundamentals Accreditation certifications from Databricks Academy.",
+    
+    // Writing
+    "writing": "I write on Substack at rishisiddharth.substack.com, covering topics like building momentum, data-driven decisions, and system thinking.",
+    
+    "blog": "I maintain a blog on Substack where I write about data science, business, and innovation. You can find it at rishisiddharth.substack.com.",
+    
+    // Contact
+    "contact": "You can reach me through LinkedIn (linkedin.com/in/rishi-siddharth), GitHub (github.com/Rsiddharth54), or my Substack (rishisiddharth.substack.com).",
+    
+    "linkedin": "You can connect with me on LinkedIn at linkedin.com/in/rishi-siddharth.",
+    
+    "social media": "I'm active on LinkedIn, GitHub, TikTok, Instagram, and Substack. You can find all my links in the hero section of my portfolio.",
+    
+    // General
+    "hello": "Hi! I'm Rishi's AI assistant. Ask me anything about his background, experience, skills, or projects!",
+    
+    "hi": "Hello! I'm here to help you learn more about Rishi. What would you like to know?",
+    
+    "help": "I can tell you about Rishi's education, experience, skills, projects, certifications, writing, and how to contact him. Just ask me anything!",
+    
+    "background": "Rishi is a data scientist and innovator studying Data Science with an International Business Minor at American University and LSE. He works on AI-powered solutions and has experience in machine learning, data analysis, and product development."
+};
+
+// Chatbot functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const chatbotToggle = document.getElementById('chatbot-toggle');
+    const chatbotContainer = document.getElementById('chatbot-container');
+    const chatbotClose = document.getElementById('chatbot-close');
+    const chatbotMessages = document.getElementById('chatbot-messages');
+    const chatbotInput = document.getElementById('chatbot-input');
+    const chatbotSend = document.getElementById('chatbot-send');
+
+    // Toggle chatbot
+    chatbotToggle.addEventListener('click', () => {
+        chatbotContainer.classList.toggle('active');
+        if (chatbotContainer.classList.contains('active')) {
+            chatbotInput.focus();
+        }
+    });
+
+    // Close chatbot
+    chatbotClose.addEventListener('click', () => {
+        chatbotContainer.classList.remove('active');
+    });
+
+    // Send message function
+    function sendMessage() {
+        const message = chatbotInput.value.trim();
+        if (!message) return;
+
+        // Add user message
+        addMessage(message, 'user');
+        chatbotInput.value = '';
+
+        // Get bot response
+        const response = getBotResponse(message);
+        
+        // Simulate typing delay
+        setTimeout(() => {
+            addMessage(response, 'bot');
+        }, 500);
+    }
+
+    // Add message to chat
+    function addMessage(text, sender) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `message ${sender}-message`;
+        
+        const contentDiv = document.createElement('div');
+        contentDiv.className = 'message-content';
+        contentDiv.textContent = text;
+        
+        messageDiv.appendChild(contentDiv);
+        chatbotMessages.appendChild(messageDiv);
+        
+        // Scroll to bottom
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+    }
+
+    // Get bot response based on knowledge base
+    function getBotResponse(userMessage) {
+        const message = userMessage.toLowerCase();
+        
+        // Check for exact matches first
+        for (const [key, value] of Object.entries(chatbotKnowledge)) {
+            if (message.includes(key)) {
+                return value;
+            }
+        }
+        
+        // Check for partial matches
+        const words = message.split(' ');
+        for (const word of words) {
+            for (const [key, value] of Object.entries(chatbotKnowledge)) {
+                if (key.includes(word) || word.length > 3 && key.includes(word.substring(0, 3))) {
+                    return value;
+                }
+            }
+        }
+        
+        // Default response
+        return "I'm not sure about that specific question, but I can tell you about Rishi's education, experience, skills, projects, certifications, or writing. What would you like to know?";
+    }
+
+    // Send message on button click
+    chatbotSend.addEventListener('click', sendMessage);
+
+    // Send message on Enter key
+    chatbotInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            sendMessage();
+        }
+    });
+
+    // Close chatbot when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!chatbotContainer.contains(e.target) && !chatbotToggle.contains(e.target)) {
+            chatbotContainer.classList.remove('active');
+        }
+    });
+});
