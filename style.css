@@ -141,7 +141,7 @@ body {
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
     background: linear-gradient(45deg, #ffffff, #00ff9f);
@@ -183,7 +183,7 @@ body {
 }
 
 .school-logo {
-    height: 60px;
+    height: 45px;
     width: auto;
     opacity: 0.8;
     transition: all 0.3s ease;
@@ -508,7 +508,7 @@ body {
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .hero-tagline {
@@ -528,7 +528,7 @@ body {
     }
 
     .school-logo {
-        height: 50px;
+        height: 40px;
     }
 
     .profile-image {
@@ -582,7 +582,7 @@ body {
     }
 
     .school-logo {
-        height: 40px;
+        height: 35px;
     }
 
     .projects-grid,
@@ -747,8 +747,8 @@ body {
 }
 
 .chatbot-toggle {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -773,10 +773,10 @@ body {
 
 .chatbot-container {
     position: absolute;
-    top: 80px;
+    top: 70px;
     right: 0;
-    width: 350px;
-    height: 500px;
+    width: 300px;
+    height: 400px;
     background: rgba(15, 15, 15, 0.95);
     border: 1px solid rgba(220, 38, 38, 0.3);
     border-radius: 15px;
