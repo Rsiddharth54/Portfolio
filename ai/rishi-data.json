@@ -1,0 +1,154 @@
+{
+  "personal": {
+    "name": "Rishi Siddharth",
+    "title": "Data Scientist & Innovator",
+    "tagline": "Building the future through data and innovation",
+    "education": {
+      "degree": "BS Data Science",
+      "minor": "International Business",
+      "schools": ["American University", "London School of Economics"],
+      "status": "Current Student"
+    },
+    "location": "International (US/UK)",
+    "interests": ["Data Science", "AI/ML", "Business", "Innovation", "Systems Thinking"]
+  },
+  "experience": [
+    {
+      "title": "Product Intern",
+      "company": "Intermezzo.ai",
+      "period": "2024 - Present",
+      "description": "Building the future of global payroll through AI",
+      "technologies": ["AI", "Machine Learning", "Product Development"],
+      "highlights": ["AI-powered global payroll solutions", "Machine learning implementation", "Product development"]
+    },
+    {
+      "title": "Research Intern",
+      "company": "Georgetown University, NSF, NSA",
+      "period": "2024",
+      "description": "Developing predictive models using AI, sentiment analysis, and more",
+      "technologies": ["AI", "Predictive Modeling", "Sentiment Analysis"],
+      "highlights": ["Collaborative research", "Predictive modeling", "AI applications"]
+    },
+    {
+      "title": "Growth @NEKTR",
+      "company": "Nektr Beverage Company",
+      "period": "2024 - Present",
+      "description": "Helping grow a beverage company making mad honey as an alternative to alcohol",
+      "technologies": ["Growth Strategy", "Business Development"],
+      "highlights": ["Business growth", "Alternative beverage market", "drinknektr.com"]
+    },
+    {
+      "title": "Data Science Project Lead",
+      "company": "Data Science Society",
+      "period": "2025",
+      "description": "Conducted comprehensive analysis of trade tariffs impact on soybean markets",
+      "technologies": ["Statistical Modeling", "Data Visualization", "Python"],
+      "highlights": ["Trade analysis", "Statistical modeling", "Data visualization"]
+    },
+    {
+      "title": "Consulting & Leadership",
+      "company": "Multiple Organizations",
+      "period": "2021 - Present",
+      "description": "Consulting for multiple companies through LSE, leading teams, helping startups",
+      "technologies": ["Consulting", "Leadership", "Business Strategy"],
+      "highlights": ["Team leadership", "Startup consulting", "Business strategy"]
+    }
+  ],
+  "skills": {
+    "programming_languages": ["Python", "SQL"],
+    "cloud_infrastructure": ["AWS", "Databricks"],
+    "machine_learning": ["PyTorch", "TensorFlow", "Machine Learning", "MPC"],
+    "computer_vision": ["OpenCV", "TensorFlow", "PIL"],
+    "data_analytics": ["Data Analysis", "Statistical Modeling", "Data Visualization"]
+  },
+  "projects": [
+    {
+      "name": "Luxembourg Stock Exchange",
+      "description": "Luxembourg Stock Exchange - images through the API",
+      "technologies": ["Python", "API Integration"],
+      "github": "https://github.com/Rsiddharth54/luxemberg-stock-exchange",
+      "license": "MIT"
+    },
+    {
+      "name": "Inflation Analysis",
+      "description": "Historical economic data analysis, building predictive models for inflation during Yuan Dynasty and interest rate changes",
+      "technologies": ["Python", "Statistical Modeling", "Economic Analysis"],
+      "github": "https://github.com/Rsiddharth54/inflation_analysis"
+    },
+    {
+      "name": "Exploring How Economies Are Classified",
+      "description": "Analysis of economy classification criteria and GNI per capita levels",
+      "technologies": ["Statistical Analysis", "Economic Research"],
+      "github": "https://github.com/Rsiddharth54/Exploring-how-economies-are-classified"
+    },
+    {
+      "name": "Portfolio",
+      "description": "Personal portfolio website built with modern web technologies",
+      "technologies": ["JavaScript", "HTML", "CSS"],
+      "github": "https://github.com/Rsiddharth54/Portfolio"
+    },
+    {
+      "name": "Fullgrip.AI - Startup",
+      "description": "Startup project built with TypeScript and modern development practices",
+      "technologies": ["TypeScript", "Startup Development"],
+      "github": "https://github.com/Rsiddharth54/Fullgrip.AI---startup"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS-Databricks Cloud Integrations",
+      "issuer": "Databricks Academy",
+      "date": "2024",
+      "verification_url": "https://customer-academy.databricks.com/learn/course/1517/aws-databricks-cloud-integrations"
+    },
+    {
+      "name": "Databricks Fundamentals Accreditation",
+      "issuer": "Databricks Academy",
+      "date": "2024",
+      "verification_url": "https://customer-academy.databricks.com/learn/course/2308/databricks-fundamentals-accreditation"
+    }
+  ],
+  "writing": {
+    "platform": "Substack",
+    "url": "https://rishisiddharth.substack.com",
+    "topics": ["Building Momentum", "Data-Driven Decisions", "System Thinking", "Data Science", "Business", "Innovation"]
+  },
+  "social_media": {
+    "github": "https://github.com/Rsiddharth54",
+    "linkedin": "https://www.linkedin.com/in/rishi-siddharth",
+    "substack": "https://rishisiddharth.substack.com",
+    "tiktok": "https://www.tiktok.com/@rishi",
+    "instagram": "https://www.instagram.com/ishi"
+  },
+  "research": [
+    {
+      "topic": "Trade Tariffs Impact on Soybean Markets",
+      "institution": "Data Science Society",
+      "year": "2023",
+      "description": "Comprehensive analysis using statistical modeling and data visualization techniques",
+      "document": "DS/TariffsSoybeans.pdf"
+    },
+    {
+      "topic": "Economics Classification Project",
+      "institution": "LSE Economics Department",
+      "year": "2022-2023",
+      "description": "Analysis of how economies should be classified using advanced statistical methods",
+      "document": "How-Should-We-Classify-Economies?.pdf"
+    }
+  ],
+  "chatbot_responses": {
+    "greetings": [
+      "Hi! I'm Gideon, Rishi's AI assistant. Ask me anything about his background, experience, skills, or projects!",
+      "Hello! I'm Gideon, here to help you learn more about Rishi. What would you like to know?",
+      "Hey there! I'm Gideon, Rishi's AI assistant. How can I help you today?"
+    ],
+    "fallback": "I'm not sure about that specific question, but I can tell you about Rishi's education, experience, skills, projects, certifications, or writing. What would you like to know?",
+    "topics": {
+      "education": "I'm pursuing a BS in Data Science with an International Business Minor at American University and the London School of Economics.",
+      "experience": "My experience includes: Product Intern at Intermezzo.ai (2024-Present), Research Intern at Georgetown University/NSF/NSA (2024), Growth role at NEKTR Beverage Company (2024-Present), Data Science Project Lead at Data Science Society (2025), and various consulting and leadership roles since 2021.",
+      "skills": "My technical skills include: Python, SQL, AWS, Databricks, PyTorch, Machine Learning, MPC, OpenCV, TensorFlow, PIL, Data Analysis, Statistical Modeling, and Data Visualization.",
+      "projects": "My projects include: Luxembourg Stock Exchange API integration, Inflation Analysis with historical economic data, Economy Classification research, Portfolio website, and Fullgrip.AI startup project.",
+      "contact": "You can reach me through LinkedIn (linkedin.com/in/rishi-siddharth), GitHub (github.com/Rsiddharth54), or my Substack (rishisiddharth.substack.com)."
+    }
+  }
+} 
