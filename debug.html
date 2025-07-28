@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug - File Loading Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #0f0f0f;
+            color: #fff;
+        }
+        .test-item {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+        .success { border-color: #00ff9f; }
+        .error { border-color: #ff4444; }
+        .image-test {
+            max-width: 100px;
+            max-height: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 Debug Test - File Loading</h1>
+    
+    <div class="test-item" id="images-test">
+        <h3>📸 Image Loading Test</h3>
+        <div id="image-results"></div>
+    </div>
+    
+    <div class="test-item" id="css-test">
+        <h3>🎨 CSS Loading Test</h3>
+        <div id="css-results"></div>
+    </div>
+    
+    <div class="test-item" id="js-test">
+        <h3>⚡ JavaScript Loading Test</h3>
+        <div id="js-results"></div>
+    </div>
+    
+    <div class="test-item" id="chatbot-test">
+        <h3>🤖 Chatbot Test</h3>
+        <div id="chatbot-results"></div>
+    </div>
+
+    <script>
+        // Test image loading
+        function testImages() {
+            const images = [
+                'images/rishi.png',
+                'images/gideon-avatar.png', 
+                'images/American_University.png',
+                'images/LSE.png'
+            ];
+            
+            const resultsDiv = document.getElementById('image-results');
+            
+            images.forEach(imgSrc => {
+                const img = new Image();
+                const testDiv = document.createElement('div');
+                testDiv.style.margin = '10px 0';
+                
+                img.onload = function() {
+                    testDiv.innerHTML = `✅ ${imgSrc} - Loaded successfully`;
+                    testDiv.className = 'success';
+                    testDiv.appendChild(img.cloneNode());
+                };
+                
+                img.onerror = function() {
+                    testDiv.innerHTML = `❌ ${imgSrc} - Failed to load`;
+                    testDiv.className = 'error';
+                };
+                
+                img.src = imgSrc;
+                resultsDiv.appendChild(testDiv);
+            });
+        }
+        
+        // Test CSS loading
+        function testCSS() {
+            const resultsDiv = document.getElementById('css-results');
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'style.css';
+            
+            link.onload = function() {
+                resultsDiv.innerHTML = '✅ style.css - Loaded successfully';
+                resultsDiv.className = 'success';
+            };
+            
+            link.onerror = function() {
+                resultsDiv.innerHTML = '❌ style.css - Failed to load';
+                resultsDiv.className = 'error';
+            };
+            
+            document.head.appendChild(link);
+        }
+        
+        // Test JavaScript loading
+        function testJS() {
+            const resultsDiv = document.getElementById('js-results');
+            const script = document.createElement('script');
+            script.src = 'script.js';
+            
+            script.onload = function() {
+                resultsDiv.innerHTML = '✅ script.js - Loaded successfully';
+                resultsDiv.className = 'success';
+            };
+            
+            script.onerror = function() {
+                resultsDiv.innerHTML = '❌ script.js - Failed to load';
+                resultsDiv.className = 'error';
+            };
+            
+            document.head.appendChild(script);
+        }
+        
+        // Test chatbot functionality
+        function testChatbot() {
+            const resultsDiv = document.getElementById('chatbot-results');
+            
+            // Check if chatbot elements exist
+            const chatbot = document.querySelector('.chatbot');
+            const toggle = document.querySelector('#chatbot-toggle');
+            const container = document.querySelector('#chatbot-container');
+            
+            if (chatbot && toggle && container) {
+                resultsDiv.innerHTML = '✅ Chatbot elements found';
+                resultsDiv.className = 'success';
+            } else {
+                resultsDiv.innerHTML = '❌ Chatbot elements missing';
+                resultsDiv.className = 'error';
+            }
+        }
+        
+        // Run all tests
+        window.addEventListener('load', function() {
+            testImages();
+            testCSS();
+            testJS();
+            
+            // Test chatbot after a short delay
+            setTimeout(testChatbot, 1000);
+        });
+    </script>
+</body>
+</html> 

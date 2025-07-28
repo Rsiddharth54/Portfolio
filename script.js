@@ -41,6 +41,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Gideon scroll-following behavior
+    window.addEventListener('scroll', () => {
+        const chatbot = document.querySelector('.chatbot');
+        if (chatbot) {
+            // Move Gideon down as user scrolls down
+            const scrollY = window.scrollY;
+            const maxScroll = document.body.scrollHeight - window.innerHeight;
+            const scrollProgress = Math.min(scrollY / maxScroll, 1);
+            
+            // Calculate new position (start at 4rem, move down to 8rem max)
+            const startTop = 4; // 4rem
+            const endTop = 8; // 8rem
+            const newTop = startTop + (scrollProgress * (endTop - startTop));
+            
+            chatbot.style.top = `${newTop}rem`;
+        }
+    });
+
     // Intersection Observer for fade-in animations
     const observerOptions = {
         threshold: 0.1,

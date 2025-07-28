@@ -183,7 +183,7 @@ body {
 }
 
 .school-logo {
-    height: 45px;
+    height: 35px;
     width: auto;
     opacity: 0.8;
     transition: all 0.3s ease;
@@ -528,7 +528,7 @@ body {
     }
 
     .school-logo {
-        height: 40px;
+        height: 30px;
     }
 
     .profile-image {
@@ -582,7 +582,7 @@ body {
     }
 
     .school-logo {
-        height: 35px;
+        height: 25px;
     }
 
     .projects-grid,
@@ -747,8 +747,8 @@ body {
 }
 
 .chatbot-toggle {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -931,9 +931,9 @@ body {
     }
     
     .chatbot-toggle {
-        width: 50px;
-        height: 50px;
-        font-size: 1.25rem;
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
     }
 }
 

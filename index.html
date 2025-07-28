@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>Rishi Siddharth - Data + Systems + Momentum</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -281,6 +284,23 @@
         </div>
     </div>
 
-    <script src="script.js?v=1"></script>
+    <script>
+        // Error handling for GitHub Pages
+        window.addEventListener('error', function(e) {
+            console.error('Resource failed to load:', e.target.src || e.target.href);
+        });
+        
+        // Fallback for missing images
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.addEventListener('error', function() {
+                    console.error('Image failed to load:', this.src);
+                    // You could set a fallback image here
+                });
+            });
+        });
+    </script>
+    <script src="script.js?v=2"></script>
 </body>
 </html>
