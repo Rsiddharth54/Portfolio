@@ -93,8 +93,9 @@ async function loadGitHubProjects() {
     projectsGrid.innerHTML = `
         <div class="project-card fade-in">
             <h3>Luxembourg Stock Exchange</h3>
-            <p>Luxembourg Stock Exchange - images through the API. Built with Python and MIT License.</p>
+            <p>In July, the Luxembourg Stock Exchange (LuxSE) announced the launch of a brand-new initiative which aims to support issuers in their transition journey and provide transparency to investors. The Transition Finance Gateway shines the spotlight on the exchange’s some 500+ non-financial corporate debt issuers across both conventional and sustainable bonds.</p>
             <a href="https://github.com/Rsiddharth54/luxemberg-stock-exchange" target="_blank">View on GitHub →</a>
+            <a href="https://www.luxse.com/about-us/press-centre/LuxSE-launches-a-new-innovative-Transition-Finance-Gateway" target="_blank" style="margin-left: 10px;">Read More →</a>
         </div>
         <div class="project-card fade-in">
             <h3>Inflation Analysis</h3>
@@ -342,7 +343,7 @@ const chatbotKnowledge = {
     // Projects - Detailed
     "projects": "Rishi's projects include: Luxembourg Stock Exchange API integration, Inflation Analysis with historical economic data and predictive models, Economy Classification research, Portfolio website, and Fullgrip.AI startup project.",
     "github": "Rishi has several GitHub projects including Luxembourg Stock Exchange API, Inflation Analysis, Economy Classification research, Portfolio website, and Fullgrip.AI startup project. You can find them on his GitHub profile.",
-    "luxembourg": "Rishi built a Luxembourg Stock Exchange API integration project using Python and API integration technologies.",
+    "luxembourg": "Rishi worked on the Luxembourg Stock Exchange project with the TPI Centre, which promotes disclosure, transparency and accountability using publicly available information for entity assessments. The project will expand in 2025 to assess over 4,000 companies in hard-to-abate sectors, 560 companies across 13 sectors for emissions pathways, 26+ major international banks, and 85 countries under various assessment frameworks.",
     "inflation": "Rishi's Inflation Analysis project explores historical economic data, building predictive models for inflation during the Yuan Dynasty and interest rate changes by the Bank of England.",
     "economy": "Rishi's Economy Classification project analyzes how economies should be classified and whether division based on GNI per capita levels makes sense.",
     "portfolio": "Rishi built this portfolio website using JavaScript, HTML, and CSS with modern web technologies.",
