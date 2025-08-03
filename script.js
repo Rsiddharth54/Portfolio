@@ -11,33 +11,47 @@ document.addEventListener('DOMContentLoaded', function() {
         navMenu.classList.toggle('active');
     });
 
+    // Page navigation
+    const navLinks = document.querySelectorAll('.nav-link');
+    const pages = document.querySelectorAll('.page');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            // Remove active class from all links and pages
+            navLinks.forEach(l => l.classList.remove('active'));
+            pages.forEach(p => p.classList.remove('active'));
+            
+            // Add active class to clicked link
+            link.classList.add('active');
+            
+            // Show corresponding page
+            const targetId = link.getAttribute('href').substring(1);
+            const targetPage = document.getElementById(targetId);
+            if (targetPage) {
+                targetPage.classList.add('active');
+            }
+            
+            // Close mobile menu
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+
     // Close mobile menu when clicking on a link
     document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
         hamburger.classList.remove('active');
         navMenu.classList.remove('active');
     }));
 
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-
     // Navbar background on scroll
     window.addEventListener('scroll', () => {
         const navbar = document.querySelector('.navbar');
         if (window.scrollY > 100) {
-            navbar.style.background = 'rgba(15, 15, 15, 0.98)';
+            navbar.style.background = 'rgba(10, 10, 10, 0.98)';
         } else {
-            navbar.style.background = 'rgba(15, 15, 15, 0.95)';
+            navbar.style.background = 'rgba(10, 10, 10, 0.95)';
         }
     });
 

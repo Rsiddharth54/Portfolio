@@ -7,23 +7,27 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Rishi Siddharth - Data + Systems + Momentum</title>
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Floating Element at Top -->
+    <div class="floating-element">
+        <div class="floating-cube"></div>
+        <div class="floating-particles"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">RS</div>
             <ul class="nav-menu">
-                <li><a href="#hero" class="nav-link">Home</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
                 <li><a href="#writing" class="nav-link">Writing</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#connect" class="nav-link">Connect</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -33,8 +37,8 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
+    <!-- Home Page -->
+    <section id="home" class="page active">
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-profile">
@@ -42,8 +46,8 @@
                         <img src="images/rishi.png" alt="Rishi Siddharth" class="profile-image">
                     </div>
                     <div class="hero-text">
-                        <h1 class="hero-title">Rishi Siddharth</h1>
-                        <p class="hero-tagline">Building the future through data and innovation.</p>
+                        <h1 class="hero-title">Hi, I'm <span class="highlight">Rishi</span></h1>
+                        <p class="hero-tagline">Data Scientist & Innovator</p>
                         <p class="hero-education">BS Data Science & International Business Minor</p>
                         <p class="hero-schools">American University & London School of Economics</p>
                         <div class="school-logos">
@@ -52,6 +56,32 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- Experience Cards -->
+                <div class="experience-showcase">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="experience-grid">
+                        <div class="experience-card">
+                            <h3>Product Intern</h3>
+                            <p class="company">Intermezzo.ai</p>
+                            <p class="period">2024 - Present</p>
+                            <p>Building the future of global payroll through AI.</p>
+                        </div>
+                        <div class="experience-card">
+                            <h3>Research Intern</h3>
+                            <p class="company">Georgetown University, NSF, NSA</p>
+                            <p class="period">2024</p>
+                            <p>Developing predictive models using AI and sentiment analysis.</p>
+                        </div>
+                        <div class="experience-card">
+                            <h3>Growth @NEKTR</h3>
+                            <p class="company">Nektr Beverage Company</p>
+                            <p class="period">2024 - Present</p>
+                            <p>Helping to make mad honey the number one alternative to alcohol.</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="hero-buttons">
                     <a href="https://github.com/Rsiddharth54" class="btn btn-primary" target="_blank">
                         <i class="fab fa-github"></i> GitHub
@@ -62,63 +92,13 @@
                     <a href="https://rishisiddharth.substack.com" class="btn btn-secondary" target="_blank">
                         <i class="fas fa-rss"></i> Substack
                     </a>
-                    <a href="https://www.tiktok.com/@rishi" class="btn btn-secondary" target="_blank">
-                        <i class="fab fa-tiktok"></i> TikTok
-                    </a>
-                    <a href="https://www.instagram.com/ishi" class="btn btn-secondary" target="_blank">
-                        <i class="fab fa-instagram"></i> Instagram
-                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <h3>Product Intern</h3>
-                    <p class="company">Intermezzo.ai</p>
-                    <p class="period">2024 - Present</p>
-                    <p>Building the future of global payroll through AI.</p>
-                </div>
-                <div class="experience-card">
-                    <h3>Research Intern</h3>
-                    <p class="company">Georgetown University, NSF, NSA</p>
-                    <p class="period">2024</p>
-                    <p>Through Georgetown University, NSF, and the NSA, I collaborated with fellow student researchers to build powerful predictive models using AI, sentiment analysis, and more.</p>
-                </div>
-                <div class="experience-card">
-                    <h3>Growth @NEKTR</h3>
-                    <p class="company">Nektr Beverage Company</p>
-                    <p class="period">2024 - Present</p>
-                    <p>Helping a friend to make mad honey the new beverage that will be the number 1 alternative to alcohol <a href="https://drinknektr.com" target="_blank" class="project-link">nektr.com</a>.</p>
-                </div>
-                <div class="experience-card">
-                    <h3>Data Science Project Lead</h3>
-                    <p class="company">Data Science Society </p>
-                    <p class="period">2025</p>
-                    <p>Conducted comprehensive analysis of trade tariffs impact on soybean markets using statistical modeling and data visualization techniques.</p>
-                    <div class="project-links">
-                        <a href="DS/TariffsSoybeans.pdf" target="_blank" class="project-link">
-                            <i class="fas fa-file-pdf"></i> View Report
-                        </a>
-                    </div>
-                </div>
-                <div class="experience-card">
-                    <h3>Consulting & Leadership</h3>
-                    <p class="company">Multiple Organizations</p>
-                    <p class="period">2021 - Present</p>
-                    <p>I have consulted for multiple companies through the London School of Economics (Castore Consulting), led teams of 5+ students (LSE Data Science Society), and have helped multiple startups build their products.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- Projects Page -->
+    <section id="projects" class="page">
         <div class="container">
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid" id="projects-grid">
@@ -128,8 +108,19 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <!-- Writing Page -->
+    <section id="writing" class="page">
+        <div class="container">
+            <h2 class="section-title">Writing</h2>
+            <div class="writing-grid" id="writing-grid">
+                <!-- Writing will be loaded dynamically -->
+                <div class="loading">Loading posts...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Page -->
+    <section id="skills" class="page">
         <div class="container">
             <h2 class="section-title">Skills & Technologies</h2>
             <div class="skills-grid">
@@ -175,83 +166,36 @@
         </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
+    <!-- Connect Page -->
+    <section id="connect" class="page">
         <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="certifications-grid">
-                <div class="certification-card">
-                    <div class="certification-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <div class="certification-content">
-                        <h3>AWS-Databricks Cloud Integrations</h3>
-                        <p class="certification-issuer">Databricks Academy</p>
-                        <p class="certification-date">2024</p>
-                        <a href="https://customer-academy.databricks.com/learn/course/1517/aws-databricks-cloud-integrations?hash=4e7e8b7193bacc988b94a0cca49fd4887915ab2a&generated_by=1118078" 
-                           class="certification-link" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Verify Certificate
-                        </a>
-                    </div>
+            <h2 class="section-title">Connect</h2>
+            <div class="connect-content">
+                <div class="connect-envelope">
+                    <i class="fas fa-envelope"></i>
                 </div>
-                <div class="certification-card">
-                    <div class="certification-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <div class="certification-content">
-                        <h3>Databricks Fundamentals Accreditation</h3>
-                        <p class="certification-issuer">Databricks Academy</p>
-                        <p class="certification-date">2024</p>
-                        <a href="https://customer-academy.databricks.com/learn/course/2308/databricks-fundamentals-accreditation?hash=377f5837eed4730253748a8b6275a8bb2449bef4&generated_by=1118078" 
-                           class="certification-link" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Verify Certificate
-                        </a>
-                    </div>
+                <div class="social-links">
+                    <a href="https://github.com/Rsiddharth54" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rishi-siddharth" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://rishisiddharth.substack.com" class="social-link" target="_blank">
+                        <i class="fas fa-rss"></i>
+                        <span>Substack</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@rishi" class="social-link" target="_blank">
+                        <i class="fab fa-tiktok"></i>
+                        <span>TikTok</span>
+                    </a>
+                    <a href="https://www.instagram.com/ishi" class="social-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
                 </div>
-                <!-- Add more certifications here as you earn them -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Writing Section -->
-    <section id="writing" class="writing">
-        <div class="container">
-            <h2 class="section-title">Writing</h2>
-            <div class="writing-grid" id="writing-grid">
-                <!-- Writing will be loaded dynamically -->
-                <div class="loading">Loading posts...</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact/Footer Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="social-links">
-                <a href="https://www.tiktok.com/@rishi" class="social-link" target="_blank">
-                    <i class="fab fa-tiktok"></i>
-                    <span>TikTok</span>
-                </a>
-                <a href="https://www.instagram.com/ishi" class="social-link" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
-                </a>
-                <a href="https://rishisiddharth.substack.com" class="social-link" target="_blank">
-                    <i class="fas fa-rss"></i>
-                    <span>Substack</span>
-                </a>
-                <a href="https://github.com/Rsiddharth54" class="social-link" target="_blank">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://www.linkedin.com/in/rishi-siddharth" class="social-link" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
-            </div>
-            <div class="footer">
-                <p>&copy; 2024 Rishi Siddharth. Built with data, systems, and momentum.</p>
             </div>
         </div>
     </section>
@@ -301,6 +245,6 @@
             });
         });
     </script>
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=4"></script>
 </body>
 </html>
