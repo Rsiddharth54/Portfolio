@@ -565,6 +565,19 @@ body {
     transform: translateY(-2px);
 }
 
+.skills-tools {
+    position: fixed;
+    top: 20%;
+    right: 10%;
+    z-index: 10;
+}
+
+.skills-tools-image {
+    width: 250px;
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0, 255, 159, 0.3));
+}
+
 /* Connect Page */
 #connect {
     background: linear-gradient(135deg, #533483 0%, #e94560 50%, #f39c12 100%);
@@ -943,6 +956,10 @@ body {
         top: 12%;
     }
 
+    .skills-tools-image {
+        width: 200px;
+    }
+
 
 
 
@@ -977,6 +994,10 @@ body {
     .floating-cube {
         width: 150px;
         top: 10%;
+    }
+
+    .skills-tools-image {
+        width: 150px;
     }
 
 
