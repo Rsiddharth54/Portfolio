@@ -28,13 +28,16 @@ body {
 .floating-cube {
     position: absolute;
     top: 20%;
-    right: 10%;
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(45deg, #00ff9f, #00ccff, #ff6b6b, #feca57);
-    border-radius: 8px;
+    left: 10%;
+    width: 200px;
+    height: auto;
     animation: float 6s ease-in-out infinite;
-    box-shadow: 0 0 30px rgba(0, 255, 159, 0.3);
+}
+
+.floating-tools {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0, 255, 159, 0.3));
 }
 
 .floating-particles {
@@ -202,24 +205,7 @@ body {
     position: relative;
 }
 
-.hero-tools {
-    position: absolute;
-    top: -50px;
-    right: -50px;
-    z-index: 2;
-}
 
-.tools-image {
-    width: 200px;
-    height: auto;
-    animation: toolsFloat 4s ease-in-out infinite;
-    filter: drop-shadow(0 10px 20px rgba(0, 255, 159, 0.3));
-}
-
-@keyframes toolsFloat {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-15px) rotate(5deg); }
-}
 
 .hero-photo {
     flex-shrink: 0;
@@ -988,9 +974,11 @@ body {
         height: 35px;
     }
 
-    .tools-image {
+    .floating-cube {
         width: 150px;
     }
+
+
 }
 
 @media (max-width: 480px) {
@@ -1019,9 +1007,11 @@ body {
         height: 30px;
     }
 
-    .tools-image {
+    .floating-cube {
         width: 120px;
     }
+
+
 
     .projects-grid,
     .writing-grid,
