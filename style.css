@@ -27,7 +27,7 @@ body {
 
 .floating-cube {
     position: absolute;
-    top: 60%;
+    top: 45%;
     right: 10%;
     width: 250px;
     height: auto;
@@ -179,6 +179,7 @@ body {
 
 .hero-photo {
     flex-shrink: 0;
+    margin-left: -2rem;
 }
 
 .profile-image {
@@ -939,7 +940,7 @@ body {
 
     .floating-cube {
         width: 200px;
-        top: 50%;
+        top: 40%;
     }
 
 
@@ -975,7 +976,7 @@ body {
 
     .floating-cube {
         width: 150px;
-        top: 45%;
+        top: 35%;
     }
 
 
