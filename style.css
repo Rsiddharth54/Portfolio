@@ -576,6 +576,7 @@ body {
     width: 250px;
     height: auto;
     filter: drop-shadow(0 10px 20px rgba(0, 255, 159, 0.3));
+    margin-top: 50px;
 }
 
 /* Connect Page */
