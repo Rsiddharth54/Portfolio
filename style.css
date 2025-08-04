@@ -186,24 +186,15 @@ body {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid transparent;
-    background: linear-gradient(45deg, #00ff9f, #00ccff, #ff6b6b, #feca57) border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out;
-    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-    mask-composite: exclude;
     transition: all 0.3s ease;
-    animation: profileGlow 3s ease-in-out infinite alternate;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-@keyframes profileGlow {
-    0% { box-shadow: 0 0 20px rgba(0, 255, 159, 0.3); }
-    100% { box-shadow: 0 0 40px rgba(0, 255, 159, 0.6); }
-}
+
 
 .profile-image:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 50px rgba(0, 255, 159, 0.8);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
 .hero-text {
