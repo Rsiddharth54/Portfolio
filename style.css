@@ -26,12 +26,12 @@ body {
 }
 
 .floating-cube {
-    position: absolute;
-    top: 45%;
+    position: fixed;
+    top: 15%;
     right: 10%;
     width: 250px;
     height: auto;
-    animation: float 6s ease-in-out infinite;
+    z-index: 10;
 }
 
 .floating-tools {
@@ -940,7 +940,7 @@ body {
 
     .floating-cube {
         width: 200px;
-        top: 40%;
+        top: 12%;
     }
 
 
@@ -976,7 +976,7 @@ body {
 
     .floating-cube {
         width: 150px;
-        top: 35%;
+        top: 10%;
     }
 
 
