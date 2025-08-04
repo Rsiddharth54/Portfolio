@@ -27,9 +27,9 @@ body {
 
 .floating-cube {
     position: absolute;
-    top: 20%;
-    left: 10%;
-    width: 200px;
+    top: 60%;
+    right: 10%;
+    width: 250px;
     height: auto;
     animation: float 6s ease-in-out infinite;
 }
@@ -201,20 +201,7 @@ body {
     text-align: left;
 }
 
-.hero-top-right {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 2;
-}
 
-.top-right-image {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
 
 .hero-title {
     font-size: 3.5rem;
@@ -951,12 +938,8 @@ body {
     }
 
     .floating-cube {
-        width: 150px;
-    }
-
-    .top-right-image {
-        width: 60px;
-        height: 60px;
+        width: 200px;
+        top: 50%;
     }
 
 
@@ -991,12 +974,8 @@ body {
     }
 
     .floating-cube {
-        width: 120px;
-    }
-
-    .top-right-image {
-        width: 50px;
-        height: 50px;
+        width: 150px;
+        top: 45%;
     }
 
 
