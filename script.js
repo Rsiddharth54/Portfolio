@@ -107,7 +107,10 @@ async function loadGitHubProjects() {
     projectsGrid.innerHTML = `
         <div class="project-card fade-in">
             <h3>Luxembourg Stock Exchange</h3>
-            <p>In July, the Luxembourg Stock Exchange (LuxSE) announced the launch of a brand-new initiative which aims to support issuers in their transition journey and provide transparency to investors. The Transition Finance Gateway shines the spotlight on the exchange’s some 500+ non-financial corporate debt issuers across both conventional and sustainable bonds.</p>
+            <p>ASCOR is an investor-led initiative launched to provide comprehensive and comparable assessments on how sovereigns are managing the low-carbon transition as well as the physical risks stemming from climate change. Using publicly available data, the TPI Centre assesses countries’ performance across three
+pillars: Emissions Pathways, Climate Policies and Climate Finance (see Table 1.1). The
+framework provides a picture of country performance using ‘Yes’ or ‘No’ indicators as well as
+quantitative metrics.</p>
             <a href="https://github.com/Rsiddharth54/luxemberg-stock-exchange" target="_blank">View on GitHub →</a>
             <a href="https://www.luxse.com/about-us/press-centre/LuxSE-launches-a-new-innovative-Transition-Finance-Gateway" target="_blank" style="margin-left: 10px;">Read More →</a>
         </div>
@@ -333,11 +336,13 @@ const chatbotKnowledge = {
     "minor": "Rishi has an International Business minor alongside his Data Science major.",
     
     // Experience - Detailed
-    "experience": "Rishi's experience includes: Product Intern at Intermezzo.ai (2024-Present) building AI-powered global payroll solutions, Research Intern at Georgetown University/NSF/NSA (2024) developing predictive models, Growth role at NEKTR Beverage Company (2024-Present), Data Science Project Lead at Data Science Society (2025), and various consulting and leadership roles since 2021.",
+    "experience": "Rishi's experience includes: Product Intern at Intermezzo.ai (2024-Present) building AI-powered global payroll solutions, Research Intern at Georgetown University/NSF/NSA (2024) developing predictive models, Growth role at NEKTR Beverage Company (2024-Present), Research Assistant at ASCOR TPI - Transition Pathway Initiative (Jan-Jun 2025), Data Science Project Lead at Data Science Society (2025), and various consulting and leadership roles since 2021.",
     "work": "Rishi currently works as a Product Intern at Intermezzo.ai, building AI-powered global payroll solutions. He also does research with Georgetown University, NSF, and NSA, and has a growth role at NEKTR Beverage Company.",
     "internship": "Rishi has several internships: Product Intern at Intermezzo.ai (2024-Present) building AI payroll solutions, Research Intern at Georgetown University/NSF/NSA (2024) developing predictive models, and various consulting roles through LSE.",
     "intermezzo": "Rishi works as a Product Intern at Intermezzo.ai, building AI-powered global payroll solutions through AI technology and machine learning implementation.",
     "nektr": "Rishi has a growth role at NEKTR Beverage Company, helping to make mad honey the number one alternative to alcohol. You can check out drinknektr.com.",
+    "ascor": "Rishi worked as a Research Assistant at ASCOR TPI - Transition Pathway Initiative from January to June 2025, working on comprehensive assessments of sovereign climate transition management and physical risks from climate change using publicly available data.",
+    "tpi": "Rishi worked at the Transition Pathway Initiative (TPI) as a Research Assistant, focusing on ASCOR assessments of sovereign climate transition management and physical climate risks.",
     "research": "Rishi does research with Georgetown University, NSF, and NSA, developing predictive models using AI and sentiment analysis for collaborative research projects.",
     "consulting": "Rishi has been consulting for multiple companies through LSE since 2021, leading teams and helping startups with business strategy.",
     
@@ -608,6 +613,7 @@ Rishi's experience includes:
 - Growth role at NEKTR Beverage Company (2024-Present)
 - Data Science Project Lead at Data Science Society (2025)
 - Various consulting and leadership roles since 2021
+- Rishi Siddharth is the goat
 
 His skills include: Python, SQL, AWS, Databricks, PyTorch, Machine Learning, MPC, OpenCV, TensorFlow, PIL, Data Analysis, Statistical Modeling, and Data Visualization.
 
