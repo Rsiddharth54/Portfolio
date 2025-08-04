@@ -210,6 +210,21 @@ body {
     text-align: left;
 }
 
+.hero-top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+.top-right-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
 .hero-title {
     font-size: 3.5rem;
     font-weight: 700;
@@ -948,6 +963,11 @@ body {
         width: 150px;
     }
 
+    .top-right-image {
+        width: 60px;
+        height: 60px;
+    }
+
 
 
 
@@ -981,6 +1001,11 @@ body {
 
     .floating-cube {
         width: 120px;
+    }
+
+    .top-right-image {
+        width: 50px;
+        height: 50px;
     }
 
 
