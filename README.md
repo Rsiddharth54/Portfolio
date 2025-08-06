@@ -51,7 +51,7 @@ Gideon is an AI chatbot that can answer questions about Rishi's background, expe
 - Rate limiting and caching
 - Smooth animations and interactions
 
-## 🛠️ Technologies Used
+## 🛠 Technologies Used
 
 - HTML5, CSS3, JavaScript
 - Font Awesome icons
@@ -59,14 +59,14 @@ Gideon is an AI chatbot that can answer questions about Rishi's background, expe
 - Responsive design principles
 - Modern CSS animations
 
-## 📱 Mobile Responsive
+##  Mobile Responsive
 
 The website is fully responsive and optimized for:
 - Desktop computers
 - Tablets
 - Mobile phones
 
-## 🎨 Design Features
+## Design Features
 
 - Dark theme with green accents
 - Smooth scroll animations
@@ -76,4 +76,3 @@ The website is fully responsive and optimized for:
 
 ---
 
-Built with data, systems, and momentum. 🚀
