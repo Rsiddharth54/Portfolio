@@ -3,260 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <title>Rishi Siddharth - Interests in Data engineering and AI</title>
-    <link rel="stylesheet" href="style.css?v=4">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Rishi Siddharth</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        
+        h1 { font-size: 32px; font-weight: 600; margin-bottom: 10px; }
+        .tagline { color: #666; font-size: 18px; margin-bottom: 5px; }
+        .education { color: #888; font-size: 14px; }
+        
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .item {
+            margin-bottom: 25px;
+        }
+        
+        .item h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        .meta {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .description {
+            color: #555;
+            font-size: 14px;
+        }
+        
+        .links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        
+        .links a {
+            color: #333;
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .links a:hover {
+            background: #333;
+            color: white;
+        }
+        
+        .skills {
+            color: #555;
+            font-size: 14px;
+        }
+        
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
+    <div class="header">
+        <img src="images/rishi.png" alt="Rishi Siddharth" class="profile-img">
+        <h1>Rishi Siddharth</h1>
+        <p class="tagline">Data Scientist</p>
+        <p class="education">BS Data Science • International Business Minor<br>
+        American University & London School of Economics</p>
+    </div>
 
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">RS</div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#writing" class="nav-link">Writing</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#connect" class="nav-link">Connect</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <div class="section">
+        <h2>Experience</h2>
+        
+        <div class="item">
+            <h3>Research Assistant</h3>
+            <p class="meta">ASCOR TPI - Transition Pathway Initiative • Jan 2025 - June 2025</p>
+            <p class="description">Assessing sovereign climate transition management and physical risks.</p>
         </div>
-    </nav>
-
-    <!-- Home Page -->
-    <section id="home" class="page active">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-profile">
-                    <div class="hero-photo">
-                        <img src="images/rishi.png" alt="Rishi Siddharth" class="profile-image">
-                    </div>
-                    <div class="hero-text">
-                        <h1 class="hero-title">Hi, I'm <span class="highlight">Rishi</span></h1>
-                        <p class="hero-tagline">Data Scientist & Innovator</p>
-                        <p class="hero-education">BS Data Science & International Business Minor</p>
-                        <p class="hero-schools">American University & London School of Economics</p>
-                        <div class="school-logos">
-                            <img src="images/American_University.png" alt="American University" class="school-logo">
-                            <img src="images/LSE.png" alt="London School of Economics" class="school-logo">
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Experience Cards -->
-                <div class="experience-showcase">
-                    <h2 class="section-title">Experience</h2>
-                    <div class="experience-grid">
-                        <div class="experience-card">
-                            <h3>Product Intern</h3>
-                            <p class="company">
-                                <a href="https://intermezzo.ai" target="_blank" class="company-link">Intermezzo.ai</a>
-                            </p>
-                            <p class="period">2024 - Present</p>
-                            <p>Building the future of global payroll through AI.</p>
-                        </div>
-                        <div class="experience-card">
-                            <h3>Research Intern</h3>
-                            <p class="company">Georgetown University, NSF, NSA</p>
-                            <p class="period">2024</p>
-                            <p>Developing predictive models using AI and sentiment analysis.</p>
-                        </div>
-                        <div class="experience-card">
-                            <h3>Growth @NEKTR</h3>
-                            <p class="company">
-                                <a href="https://drinknektr.com" target="_blank" class="company-link">Nektr Beverage Company</a>
-                            </p>
-                            <p class="period">2024 - Present</p>
-                            <p>Helping to make mad honey the number one alternative to alcohol.</p>
-                        </div>
-                        <div class="experience-card">
-                            <h3>Research Assistant</h3>
-                            <p class="company">
-                                <a href="https://www.transitionpathwayinitiative.org" target="_blank" class="company-link">ASCOR TPI - Transition Pathway Initiative</a>
-                            </p>
-                            <p class="period">January 2025 - June 2025</p>
-                            <p>Working on comprehensive assessments of sovereign climate transition management and physical risks from climate change using publicly available data.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-buttons">
-                    <a href="https://github.com/Rsiddharth54" class="btn btn-primary" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/rishi-siddharth" class="btn btn-secondary" target="_blank">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://rishisiddharth.substack.com" class="btn btn-secondary" target="_blank">
-                        <i class="fas fa-rss"></i> Substack
-                    </a>
-                </div>
-            </div>
+        
+        <div class="item">
+            <h3>Product Intern</h3>
+            <p class="meta">Intermezzo.ai • 2024 - Present</p>
+            <p class="description">Building the future of global payroll through AI.</p>
         </div>
-    </section>
-
-    <!-- Projects Page -->
-    <section id="projects" class="page">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid" id="projects-grid">
-                <!-- Projects will be loaded dynamically -->
-                <div class="loading">Loading projects...</div>
-            </div>
+        
+        <div class="item">
+            <h3>Growth</h3>
+            <p class="meta">Nektr Beverage Company • 2024 - Present</p>
+            <p class="description">Scaling mad honey as an alternative to alcohol.</p>
         </div>
-    </section>
-
-    <!-- Writing Page -->
-    <section id="writing" class="page">
-        <div class="container">
-            <h2 class="section-title">Writing</h2>
-            <div class="writing-grid" id="writing-grid">
-                <!-- Writing will be loaded dynamically -->
-                <div class="loading">Loading posts...</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Page -->
-    <section id="skills" class="page">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">SQL</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Cloud & Infrastructure</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Databricks</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Machine Learning</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">MPC</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Computer Vision</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">OpenCV</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">PIL</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Data & Analytics</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Data Analysis</span>
-                        <span class="skill-tag">Statistical Modeling</span>
-                        <span class="skill-tag">Data Visualization</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Tools Image for Skills Page -->
-        <div class="skills-tools">
-            <img src="images/ghlibil.png" alt="Tools and Technologies" class="skills-tools-image">
-        </div>
-    </section>
-
-    <!-- Connect Page -->
-    <section id="connect" class="page">
-        <div class="container">
-            <h2 class="section-title">Connect</h2>
-            <div class="connect-content">
-                <div class="connect-envelope">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/Rsiddharth54" class="social-link" target="_blank">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/rishi-siddharth" class="social-link" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://rishisiddharth.substack.com" class="social-link" target="_blank">
-                        <i class="fas fa-rss"></i>
-                        <span>Substack</span>
-                    </a>
-                    <a href="https://www.tiktok.com/@rishi" class="social-link" target="_blank">
-                        <i class="fab fa-tiktok"></i>
-                        <span>TikTok</span>
-                    </a>
-                    <a href="https://www.instagram.com/ishi" class="social-link" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Floating Chatbot -->
-    <div id="chatbot" class="chatbot">
-        <div class="chatbot-toggle" id="chatbot-toggle">
-            <img src="images/gideon-avatar.png" alt="Gideon" class="chatbot-avatar">
-        </div>
-        <div class="chatbot-container" id="chatbot-container">
-            <div class="chatbot-header">
-                <h3>Ask me anything!</h3>
-                <button class="chatbot-close" id="chatbot-close">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="chatbot-messages" id="chatbot-messages">
-                <div class="message bot-message">
-                    <div class="message-content">
-                        Hi! I'm Gideon, Rishi's AI assistant. Ask me anything about his background, experience, skills, or projects!
-                    </div>
-                </div>
-            </div>
-            <div class="chatbot-input">
-                <input type="text" id="chatbot-input" placeholder="Type your question..." />
-                <button id="chatbot-send">
-                    <i class="fas fa-paper-plane"></i>
-                </button>
-            </div>
+        
+        <div class="item">
+            <h3>Research Intern</h3>
+            <p class="meta">Georgetown University, NSF, NSA • Summer 2024</p>
+            <p class="description">Developed predictive models using AI and sentiment analysis.</p>
         </div>
     </div>
 
-    <script>
-        // Error handling for GitHub Pages
-        window.addEventListener('error', function(e) {
-            console.error('Resource failed to load:', e.target.src || e.target.href);
-        });
+    <div class="section">
+        <h2>Selected Projects</h2>
         
-        // Fallback for missing images
-        document.addEventListener('DOMContentLoaded', function() {
-            const images = document.querySelectorAll('img');
-            images.forEach(img => {
-                img.addEventListener('error', function() {
-                    console.error('Image failed to load:', this.src);
-                    // You could set a fallback image here
-                });
-            });
-        });
-    </script>
-    <script src="script.js?v=4"></script>
+        <div class="item">
+            <h3><a href="https://github.com/Rsiddharth54/inflation_analysis" target="_blank">Economic Inflation Prediction</a></h3>
+            <p class="description">Built ML models predicting historical inflation patterns and Bank of England interest rate changes using advanced time series analysis.</p>
+        </div>
+        
+        <div class="item">
+            <h3><a href="https://github.com/Rsiddharth54/luxemberg-stock-exchange" target="_blank">Luxembourg Stock Exchange API</a></h3>
+            <p class="description">Developed Python API integration for extracting and analyzing financial data from LSE with automated image processing.</p>
+        </div>
+        
+        <div class="item">
+            <h3><a href="https://github.com/Rsiddharth54/Stock-Factors-Analytic-Tool" target="_blank">Stock Factors Analytics</a></h3>
+            <p class="description">Created quantitative analysis tool for multi-factor stock evaluation using Python and statistical modeling.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <p class="skills">Python • SQL • AWS • PyTorch • TensorFlow • Data Analysis • Machine Learning • API Development • Financial Modeling</p>
+    </div>
+
+    <div class="links">
+        <a href="https://github.com/Rsiddharth54" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/rishi-siddharth" target="_blank">LinkedIn</a>
+        <a href="https://rishisiddharth.substack.com" target="_blank">Writing</a>
+    </div>
 </body>
 </html>
