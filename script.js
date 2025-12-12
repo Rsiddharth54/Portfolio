@@ -107,32 +107,52 @@ async function loadGitHubProjects() {
     projectsGrid.innerHTML = `
         <div class="project-card fade-in">
             <h3>Luxembourg Stock Exchange</h3>
-            <p>ASCOR is an investor-led initiative launched to provide comprehensive and comparable assessments on how sovereigns are managing the low-carbon transition as well as the physical risks stemming from climate change. Using publicly available data, the TPI Centre assesses countries’ performance across three
-pillars: Emissions Pathways, Climate Policies and Climate Finance (see Table 1.1). The
-framework provides a picture of country performance using ‘Yes’ or ‘No’ indicators as well as
-quantitative metrics.</p>
+            <div class="project-certification">
+                <img src="images/LSE.png" alt="LSE Certification" class="cert-logo">
+                <span>LSE Research Project</span>
+            </div>
+            <p>To promote disclosure, transparency and accountability, the TPI Centre uses only publicly available information to conduct entity assessments and its resources are open access. The TPI Centre will expand its research in 2025 to assess: More than 4,000 companies in hard-to-abate sectors for their climate governance using the Management Quality framework 560 companies in 13 hard-to-abate sectors for their emissions pathways using the Carbon Performance methodologies 26 major international banks and over 10 banks with high exposure to emerging markets under the Net Zero Bank Assessment Framework and Carbon Performance Alignment Matrix 85 countries under the ASCOR framework.</p>
             <a href="https://github.com/Rsiddharth54/luxemberg-stock-exchange" target="_blank">View on GitHub →</a>
             <a href="https://www.luxse.com/about-us/press-centre/LuxSE-launches-a-new-innovative-Transition-Finance-Gateway" target="_blank" style="margin-left: 10px;">Read More →</a>
         </div>
         <div class="project-card fade-in">
             <h3>Inflation Analysis</h3>
-            <p>This project explores historical economic data, building predictive models for inflation during the Yuan Dynasty and interest rate changes by the Bank of England.</p>
+            <div class="project-certification">
+                <img src="images/LSE.png" alt="LSE Certification" class="cert-logo">
+                <span>LSE Economic Research</span>
+            </div>
+            <p>Comprehensive analysis of historical economic data with predictive modeling for inflation patterns during the Yuan Dynasty and Bank of England interest rate changes using advanced statistical methods.</p>
             <a href="https://github.com/Rsiddharth54/inflation_analysis" target="_blank">View on GitHub →</a>
         </div>
         <div class="project-card fade-in">
-            <h3>Exploring How Economies Are Classified</h3>
-            <p>By which criteria should we classify economies? Does division based on GNI per capita levels make sense?</p>
-            <a href="https://github.com/Rsiddharth54/Exploring-how-economies-are-classified" target="_blank">View on GitHub →</a>
+            <h3>Economic Classification Research</h3>
+            <div class="project-certification">
+                <img src="images/LSE.png" alt="LSE Certification" class="cert-logo">
+                <span>LSE Development Economics</span>
+            </div>
+            <p>Research project analyzing classification criteria for global economies, questioning the effectiveness of GNI per capita-based divisions and proposing alternative frameworks.</p>
+            <div class="project-links">
+                <a href="https://github.com/Rsiddharth54/Exploring-how-economies-are-classified" target="_blank">View Code on GitHub →</a>
+                <a href="How-Should-We-Classify-Economies?.pdf" target="_blank" class="pdf-link">
+                    <i class="fas fa-file-pdf"></i> Read Full Report (PDF)
+                </a>
+            </div>
         </div>
         <div class="project-card fade-in">
-            <h3>Portfolio</h3>
-            <p>Personal portfolio website built with JavaScript and modern web technologies.</p>
+            <h3>Portfolio Website</h3>
+            <p>Modern, responsive portfolio website built with vanilla JavaScript, CSS animations, and integrated AI chatbot featuring dynamic content loading and multi-page navigation.</p>
             <a href="https://github.com/Rsiddharth54/Portfolio" target="_blank">View on GitHub →</a>
         </div>
         <div class="project-card fade-in">
             <h3>Fullgrip.AI - Startup</h3>
-            <p>Startup project built with TypeScript and modern development practices.</p>
+            <p>AI-powered startup project focused on automation and intelligent solutions, built with TypeScript and modern development frameworks for scalable enterprise applications.</p>
             <a href="https://github.com/Rsiddharth54/Fullgrip.AI---startup" target="_blank">View on GitHub →</a>
+        </div>
+        <div class="project-card fade-in coming-soon">
+            <h3>New Project (Coming Soon)</h3>
+            <div class="status-badge">In Development</div>
+            <p>Exciting new project currently in development. More details to be revealed soon!</p>
+            <div class="placeholder-link">Stay tuned...</div>
         </div>
     `;
 }
