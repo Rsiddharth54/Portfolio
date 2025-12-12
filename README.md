@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website showcasing Rishi's work in data science, systems, and innovation.
 
-## 📁 Project Structure
+##  Structure
 
 ```
 PP/
@@ -25,17 +25,9 @@ PP/
 └── my-react-app/       # React application (if any)
 ```
 
-## 🚀 Features
+##  Sections
 
-- **Responsive Design**: Works on all devices
-- **Interactive Chatbot**: Gideon AI assistant
-- **Dynamic Content**: Projects and writing loaded dynamically
-- **Modern UI**: Clean, professional design with animations
-- **School Integration**: American University & LSE logos
-
-## 🎯 Sections
-
-1. **Hero Section**: Introduction with profile photo and school logos
+1. **Introduction Section**: Introduction with profile photo and school logos
 2. **Experience**: Work history and internships
 3. **Projects**: GitHub projects with descriptions
 4. **Skills**: Technical skills and technologies
@@ -45,13 +37,13 @@ PP/
 
 ## 🤖 Gideon AI Assistant
 
-Gideon is an AI chatbot that can answer questions about Rishi's background, experience, skills, and projects. The chatbot uses:
+Gideon is an AI chatbot that can answer questions about my background, experience, skills, and projects. The chatbot uses:
 - Fallback knowledge base for offline responses
 - API integration for enhanced responses
 - Rate limiting and caching
 - Smooth animations and interactions
 
-## 🛠 Technologies Used
+##  Technologies Used
 
 - HTML5, CSS3, JavaScript
 - Font Awesome icons
