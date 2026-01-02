@@ -32,6 +32,23 @@
         .tagline { color: #666; font-size: 18px; margin-bottom: 5px; }
         .education { color: #888; font-size: 14px; }
         
+        .resume-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #0066cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+        
+        .resume-link:hover {
+            background: #0052a3;
+            text-decoration: none;
+        }
+        
         .section {
             margin-bottom: 50px;
         }
@@ -62,6 +79,7 @@
         .description {
             color: #555;
             font-size: 14px;
+            line-height: 1.5;
         }
         
         .links {
@@ -100,22 +118,30 @@
         <h1>Rishi Siddharth</h1>
         <p class="tagline">Data Scientist</p>
         <p class="education">BS Data Science • International Business Minor<br>
-        American University & London School of Economics</p>
+        American University & London School of Economics<br>
+        <span style="color: #999; font-size: 12px;">Security Clearance Eligible • U.S. Citizen</span></p>
+        <a href="https://github.com/Rsiddharth54/Portfolio/blob/main/Rishi_SiddharthGuidehouse_Resume.pdf" target="_blank" class="resume-link">Download Resume</a>
     </div>
 
     <div class="section">
         <h2>Experience</h2>
         
         <div class="item">
-            <h3>Research Assistant</h3>
-            <p class="meta">ASCOR TPI - Transition Pathway Initiative • Jan 2025 - June 2025</p>
-            <p class="description">Assessing sovereign climate transition management and physical risks.</p>
+            <h3>Data Science Researcher</h3>
+            <p class="meta">Transition Pathway Initiative - London School of Economics • Jan 2025 - April 2025</p>
+            <p class="description">Co-developed FastAPI-based web application for carbon performance data retrieval. Built RESTful endpoints for carbon-intensity projections using Python. Integrated ASCOR framework with MCP and RAG features for scalable climate risk assessment.</p>
         </div>
         
         <div class="item">
             <h3>Product Intern</h3>
-            <p class="meta">Intermezzo.ai • 2024 - Present</p>
-            <p class="description">Building the future of global payroll through AI.</p>
+            <p class="meta">Intermezzo.ai • Jan 2024 - Present</p>
+            <p class="description">Fine-tuned LLMs for tax compliance automation, achieving 99% accuracy in entity recognition. Analyzed international regulatory requirements (OECD, HMRC, Singapore CPF). Integrated tax rules into Gross-to-Net API pipeline.</p>
+        </div>
+        
+        <div class="item">
+            <h3>Analyst - AI Health Tech Consulting</h3>
+            <p class="meta">LSE Castore Consulting • Dec 2024 - May 2025</p>
+            <p class="description">Built Series A pricing models and conducted competitive analysis across 15+ AI health tech firms. Delivered insights on EU and Indonesia expansion strategy, healthcare AI adoption, and regulatory dynamics.</p>
         </div>
         
         <div class="item">
@@ -125,14 +151,34 @@
         </div>
         
         <div class="item">
-            <h3>Research Intern</h3>
-            <p class="meta">Georgetown University, NSF, NSA • Summer 2024</p>
-            <p class="description">Developed predictive models using AI and sentiment analysis.</p>
+            <h3>Data Science Research Intern</h3>
+            <p class="meta">Georgetown University REU (NSF/NSA Sponsored) • May 2024 - Aug 2024</p>
+            <p class="description">Developed NLP-based ML models to assess geopolitical risk from legislative text. Presented findings to NSF officers and intelligence community. Runner-up in undergraduate Tufts competition.</p>
         </div>
     </div>
 
     <div class="section">
         <h2>Selected Projects</h2>
+        
+        <div class="item">
+            <h3><a href="https://rsiddharth54.github.io/ecommerce-listing-classifier/" target="_blank">E-Commerce Listing Quality Classifier</a></h3>
+            <p class="description">Built Random Forest classifier for product quality assessment. Engineered 12 features from 9K product titles, compared 5 ML models achieving 98% accuracy. Includes critical analysis of data leakage limitations.</p>
+        </div>
+        
+        <div class="item">
+            <h3><a href="https://github.com/Rsiddharth54/Global_AI_Adoptions_Claude" target="_blank">Global AI Adoption Analysis</a></h3>
+            <p class="description">Analyzed AI usage patterns across 200+ countries using Anthropic's Economic Index. Found emerging markets show 4-6pp higher automation rates than developed markets. Published comprehensive research report.</p>
+        </div>
+        
+        <div class="item">
+            <h3><a href="https://github.com/Rsiddharth54" target="_blank">War Monitor (Ukraine)</a></h3>
+            <p class="description">Built multi-agent AI system to combine and verify conflict intelligence using Chain-of-Debate framework. Integrated five OSINT data streams including ACLED, satellite imagery, government sources, and news.</p>
+        </div>
+        
+        <div class="item">
+            <h3><a href="https://rishisiddharth.com/economies.html" target="_blank">How Should We Classify Economies?</a></h3>
+            <p class="description">Published 72-page research paper analyzing economic classification methodologies using 7 thematic dimensions. Collaboration with LSE Data Science Society and economics students.</p>
+        </div>
         
         <div class="item">
             <h3><a href="https://github.com/Rsiddharth54/inflation_analysis" target="_blank">Economic Inflation Prediction</a></h3>
@@ -143,16 +189,14 @@
             <h3><a href="https://github.com/Rsiddharth54/luxemberg-stock-exchange" target="_blank">Luxembourg Stock Exchange API</a></h3>
             <p class="description">Developed Python API integration for extracting and analyzing financial data from LSE with automated image processing.</p>
         </div>
-        
-        <div class="item">
-            <h3><a href="https://github.com/Rsiddharth54/Stock-Factors-Analytic-Tool" target="_blank">Stock Factors Analytics</a></h3>
-            <p class="description">Created quantitative analysis tool for multi-factor stock evaluation using Python and statistical modeling.</p>
-        </div>
     </div>
 
     <div class="section">
         <h2>Skills</h2>
-        <p class="skills">Python • SQL • AWS • PyTorch • TensorFlow • Data Analysis • Machine Learning • API Development • Financial Modeling</p>
+        <p class="skills"><strong>Languages:</strong> Python • R • SQL • Stata<br>
+        <strong>Data & Tools:</strong> Databricks • FastAPI • Docker • Tableau • Power BI • Excel<br>
+        <strong>ML/NLP:</strong> Machine Learning • spaCy • Hugging Face • PyTorch • TensorFlow<br>
+        <strong>Certifications:</strong> Databricks Fundamentals • AWS Databricks Cloud (2025)</p>
     </div>
 
     <div class="links">
