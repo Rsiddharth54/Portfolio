@@ -1,6 +1,6 @@
 # Rishi Siddharth - Portfolio
 
-A modern, responsive portfolio website showcasing Rishi's work in data science, systems, and innovation.
+Portfolio website showcasing work in data science and research
 
 ##  Structure
 
