@@ -1,6 +1,6 @@
 # Rishi Siddharth - Portfolio
 
-Portfolio website showcasing work in data science and research
+Portfolio website showcasing work and research. **Rishisiddharth.com** Hosted by github pages
 
 ##  Structure
 
