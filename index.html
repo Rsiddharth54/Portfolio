@@ -5,212 +5,379 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rishi Siddharth</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             color: #333;
-            max-width: 700px;
+        }
+        
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('images/chess.jpeg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 10%;
+            position: relative;
+        }
+        
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+        
+        .hero .subtitle {
+            font-size: 20px;
+            color: #ccc;
+            margin-bottom: 40px;
+        }
+        
+        /* NAVIGATION */
+        nav {
+            position: absolute;
+            top: 40px;
+            right: 10%;
+            display: flex;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 10px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+        
+        nav a:hover {
+            border-bottom: 2px solid white;
+        }
+        
+        /* SECTIONS */
+        section {
+            max-width: 900px;
             margin: 0 auto;
-            padding: 60px 20px;
+            padding: 100px 40px;
         }
         
-        .header {
-            text-align: center;
+        h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #111;
+            font-weight: 600;
+        }
+        
+        .bio-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 25px;
+        }
+        
+        /* PROJECTS */
+        .project-card {
             margin-bottom: 60px;
+            padding-bottom: 60px;
+            border-bottom: 1px solid #eee;
         }
         
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin-bottom: 20px;
+        .project-card:last-child {
+            border-bottom: none;
         }
         
-        h1 { font-size: 32px; font-weight: 600; margin-bottom: 10px; }
-        .tagline { color: #666; font-size: 18px; margin-bottom: 5px; }
-        .education { color: #888; font-size: 14px; }
+        .project-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #111;
+        }
         
-        .resume-link {
+        .project-card h3 a {
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .project-card h3 a:hover {
+            color: #0052a3;
+        }
+        
+        .project-meta {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 15px;
+        }
+        
+        .project-description {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #555;
+        }
+        
+        /* OTHER PROJECTS GRID */
+        .other-projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .other-project {
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        
+        .other-project:hover {
+            border-color: #0066cc;
+            box-shadow: 0 4px 12px rgba(0,102,204,0.1);
+        }
+        
+        .other-project h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .other-project h4 a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .other-project h4 a:hover {
+            color: #0066cc;
+        }
+        
+        .other-project p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        /* WRITING */
+        .writing-link {
             display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
+            padding: 15px 30px;
             background: #0066cc;
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 14px;
-            transition: background 0.3s;
-        }
-        
-        .resume-link:hover {
-            background: #0052a3;
-            text-decoration: none;
-        }
-        
-        .section {
-            margin-bottom: 50px;
-        }
-        
-        h2 {
-            font-size: 20px;
-            margin-bottom: 20px;
-            color: #333;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        
-        .item {
-            margin-bottom: 25px;
-        }
-        
-        .item h3 {
             font-size: 16px;
-            margin-bottom: 5px;
+            transition: background 0.3s;
+            margin-top: 20px;
         }
         
-        .meta {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 5px;
+        .writing-link:hover {
+            background: #0052a3;
         }
         
-        .description {
-            color: #555;
-            font-size: 14px;
-            line-height: 1.5;
+        /* CONTACT FOOTER */
+        footer {
+            background: #f8f8f8;
+            padding: 60px 40px;
+            text-align: center;
         }
         
-        .links {
+        .contact-links {
             display: flex;
-            gap: 20px;
             justify-content: center;
-            margin-top: 40px;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
         }
         
-        .links a {
+        .contact-links a {
             color: #333;
             text-decoration: none;
-            padding: 8px 16px;
+            font-size: 16px;
+            padding: 10px 20px;
             border: 1px solid #ddd;
             border-radius: 5px;
             transition: all 0.3s;
         }
         
-        .links a:hover {
+        .contact-links a:hover {
             background: #333;
             color: white;
+            border-color: #333;
         }
         
-        .skills {
-            color: #555;
+        .resume-download {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #0066cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        
+        .resume-download:hover {
+            background: #0052a3;
+        }
+        
+        .copyright {
+            margin-top: 30px;
+            color: #999;
             font-size: 14px;
         }
         
-        .interests {
-            color: #666;
-            font-size: 14px;
-            font-style: italic;
-            margin-top: 10px;
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 42px;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 15px;
+                top: 20px;
+                right: 5%;
+            }
+            
+            section {
+                padding: 60px 20px;
+            }
+            
+            h2 {
+                font-size: 28px;
+            }
+            
+            .other-projects {
+                grid-template-columns: 1fr;
+            }
         }
-        
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="images/rishi.png" alt="Rishi Siddharth" class="profile-img">
-        <h1>Rishi Siddharth</h1>
-        <p class="tagline">Data Scientist</p>
-        <p class="education">BS Data Science • International Business Minor<br>
-        American University & London School of Economics<br>
-        <span style="color: #999; font-size: 12px;">Security Clearance Eligible • U.S. Citizen</span></p>
-        <p class="interests">Interested in AI governance, tech policy, and responsible AI deployment</p>
-        <a href="Rishi_Siddharth_Resume2026.pdf" target="_blank" class="resume-link">Download Resume</a>
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <nav>
+            <a href="#bio">BIO</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#writing">WRITING</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+        <h1>RISHI SIDDHARTH</h1>
+        <p class="subtitle">Data Scientist • Climate Finance & Tech Policy</p>
     </div>
 
-    <div class="section">
-        <h2>Experience</h2>
-        
-        <div class="item">
-            <h3>Data Science Researcher</h3>
-            <p class="meta">Transition Pathway Initiative - London School of Economics • Jan 2025 - April 2025</p>
-            <p class="description">Co-developed FastAPI-based web application for carbon performance data retrieval. Built RESTful endpoints for carbon-intensity projections using Python. Integrated ASCOR framework with MCP and RAG features for scalable climate risk assessment.</p>
-        </div>
-        
-        <div class="item">
-            <h3>Product Intern</h3>
-            <p class="meta">Intermezzo.ai • Jan 2024 - Present</p>
-            <p class="description">Fine-tuned LLMs for tax compliance automation, achieving 99% accuracy in entity recognition. Analyzed international regulatory requirements (OECD, HMRC, Singapore CPF). Integrated tax rules into Gross-to-Net API pipeline.</p>
-        </div>
-        
-        <div class="item">
-            <h3>Analyst - AI Health Tech Consulting</h3>
-            <p class="meta">LSE Castore Consulting • Dec 2024 - May 2025</p>
-            <p class="description">Built Series A pricing models and conducted competitive analysis across 15+ AI health tech firms. Delivered insights on EU and Indonesia expansion strategy, healthcare AI adoption, and regulatory dynamics.</p>
-        </div>
-        
-        <div class="item">
-            <h3>Growth</h3>
-            <p class="meta">Nektr Beverage Company • 2024 - Present</p>
-            <p class="description">Scaling mad honey as an alternative to alcohol.</p>
-        </div>
-        
-        <div class="item">
-            <h3>Data Science Research Intern</h3>
-            <p class="meta">Georgetown University REU (NSF/NSA Sponsored) • May 2024 - Aug 2024</p>
-            <p class="description">Developed NLP-based ML models to assess geopolitical risk from legislative text. Presented findings to NSF officers and intelligence community. Runner-up in undergraduate Tufts competition.</p>
-        </div>
-    </div>
+    <!-- BIO SECTION -->
+    <section id="bio">
+        <h2>Bio</h2>
+        <p class="bio-text">
+            I'm a data scientist working at the intersection of climate finance, tech policy, and responsible AI deployment. Currently, I'm building infrastructure at the London School of Economics' Transition Pathway Initiative (TPI) Centre, where I develop APIs that serve climate assessment data to investors managing $87 trillion in assets.
+        </p>
+        <p class="bio-text">
+            My workridges technical execution and policy understanding. At Georgetown's NSF-sponsored research program, I developed NLP models to assess geopolitical risk from legislative text—work that was presented to the intelligence community. At Intermezzo.ai, I fine-tuned LLMs for international tax compliance, achieving 99% accuracy in entity recognition across OECD, HMRC, and Singapore CPF frameworks.
+        </p>
+        <p class="bio-text">
+            I'm particularly interested in stablecoin regulation, AI governance, and how data science can inform better policy decisions. I hold a BS in Data Science with an International Business minor from American University and the London School of Economics. I'm a U.S. citizen and security clearance eligible.
+      </p>
+    </section>
 
-    <div class="section">
-        <h2>Selected Projects</h2>
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2>Featured Projects</h2>
         
-        <div class="item">
-            <h3><a href="https://rsiddharth54.github.io/ecommerce-listing-classifier/" target="_blank">E-Commerce Listing Quality Classifier</a></h3>
-            <p class="description">Built Random Forest classifier for product quality assessment. Engineered 12 features from 9K product titles, compared 5 ML models achieving 98% accuracy. Includes critical analysis of data leakage limitations.</p>
+        <div class="project-card">
+            <h3><a href="https://github.com/lse-ds205/tpi-apis" target="_blank">TPI Climate Assessment API</a></h3>
+            <p class="project-meta">Transition Pathway Initiative - London School of Economics | Jan 2025 - April 2025</p>
+            <p class="project-description">
+                Co-developed FastAPI application providing programmatic access to TPI Centre's climate assessments covering 2,000+ publicly listed companies and 85 sovereign entities, supporting 156 global investors managing $87 trillion AUM. Built RESTful endpoints for Management Quality (23 indicators) and Carbon Performance data, implementing Pydantic validation and generating carbon-intensity projections against 1.5°C sectoral benchmarks. Integrated ASCOR sovereign assessment framework (covering 85% of global GHG emissions and 90% of global GDP) with Model Context Protocol (MCP) and RAG features for intelligent data querying. Collaborated with 15-member DS205 team under Dr. Jon Cardoso-Silva and TPI Centre staff, applying test-driven development and CI/CD pipelines to deliver production-grade codebase serving real-world investor use cases.
+            </p>
         </div>
         
-        <div class="item">
-            <h3><a href="https://github.com/Rsiddharth54/Global_AI_Adoptions_Claude" target="_blank">Global AI Adoption Analysis</a></h3>
-            <p class="description">Analyzed AI usage patterns across 200+ countries using Anthropic's Economic Index. Found emerging markets show 4-6pp higher automation rates than developed markets. Published comprehensive research report.</p>
+        <div class="project-card">
+            <h3><a ref="https://github.com/Rsiddharth54/Exploring-how-economies-are-classified" target="_blank">Economic Classification Research</a></h3>
+            <p class="project-meta">London School of Economics | Certified Research</p>
+            <p class="project-description">
+                Published 72-page research paper analyzing economic classification methodologies using 7 thematic dimensions beyond GNI per capita. Developed multidimensional development index incorporating income, infrastructure, trade, human capital, environmental, institutional, and health factors. Revealed policy-relevant distinctions obscured by traditional GNI classification—identifying middle-income countries with robust human capital but weak infrastructure, and countries with similar GNI but vastly different development profiles. Collaboration with LSE Data Science Society and economics students using World Bank API data, Python, and advanced statistical modeling.
+            </p>
         </div>
         
-        <div class="item">
-            <h3><a href="https://github.com/Rsiddharth54" target="_blank">War Monitor (Ukraine)</a></h3>
-            <p class="description">Built multi-agent AI system to combine and verify conflict intelligence using Chain-of-Debate framework. Integrated five OSINT data streams including ACLED, satellite imagery, government sources, and news.</p>
+        <div class="project-card">
+            <h3><a href="https://github.com/Rsiddharth54/Global_AI_Aptions_Claude" target="_blank">Global AI Adoption Analysis</a></h3>
+            <p class="project-meta">Independent Research | 2024</p>
+            <p class="project-description">
+                Analyzed AI usage patterns across 200+ countries using Anthropic's Economic Index. Found emerging markets show 4-6 percentage point higher automation rates than developed markets—challenging assumptions about AI adoption being concentrated in wealthy nations. Published comprehensive research report examining implications for global development, workforce transformation, and policy responses. Utilized Python for data analysis and visualization, creating interactive dashboards toxplore cross-country patterns.
+            </p>
         </div>
         
-        <div class="item">
-            <h3><a href="https://rishisiddharth.com/economies.html" target="_blank">How Should We Classify Economies?</a></h3>
-            <p class="description">Published 72-page research paper analyzing economic classification methodologies using 7 thematic dimensions. Collaboration with LSE Data Science Society and economics students.</p>
+        <div class="project-card">
+            <h3>Stablecoin Policy Research</h3>
+            <p class="project-meta">In Progress | 2026</p>
+            <p class="project-description">
+                Developing comprehensive policy analysis of stablecoin regulation, focusing on the GENIUS Act and Treasury Department frameworks. Examining AML/KYC requirements, reserve transparency, systemic risk implications, and international regulatory coordination. Research bridges technical understanding of stablecoin mechanisms with policy implementation challenges, drawing on insights from TPI climate finance work and Intermezzo.ai compliance automation experience.
+            </p>
         </div>
         
-        <div class="item">
-            <h3><a href="https://github.com/Rsiddharth54/inflation_analysis" target="_blank">Economic Inflation Prediction</a></h3>
-            <p class="description">Built ML models predicting historical inflation patterns and Bank of England interest rate changes using advanced time series analysis.</p>
-        </div>
+        <h3 style="margin-top: 80px; margin-bottom: 30px; font-size: 28px;">Other Work</h3>
         
-        <div class="item">
-            <h3><a href="https://github.com/Rsiddharth54/luxemberg-stock-exchange" target="_blank">Luxembourg Stock Exchange API</a></h3>
-            <p class="description">Developed Python API integration for extracting and analyzing financial data from LSE with automated image processing.</p>
+        <div class="other-projects">
+            <div class="other-project">
+                <h4><a href="https://rsiddharth54.github.io/ecommerce-listing-classifier/" target="_blank">E-Commerce Listing Classifier</a></h4>
+                <p>Random Forest classifier for product quality assessment. 98% accuracy across 9K product titles with critical analysis of data leakage limitations.</p>
+            </div>
+            
+            <div class="other-project">
+                <h4><a href="https://github.com/Rsiddharth54" target="_blank">War Monitor (Ukraine)</a></h4>
+                <p>Multi-agent AI system combining OSINT data streams including ACLED, satellite imagery, government sources, and news using Chain-of-Debate framework.</p>
+            </div>
+            
+            <div class="other-project">
+                <h4><a href="https://github.com/Rsiddharth54/inflation_analysis" target="_blank">Economic Inflation Prediction</a></h4>
+                <p>ML models predicting historical inflation patterns and Bank of England interest rate changes using advanced time series analysis.</p>
+            </div>
+            
+            <div class="other-project">
+                <h4><a href="https://github.com/Rsiddharth54/luxemberg-stock-exchange" target="_blank">Luxembourg Stock Exchange API</a></h4>
+                <p>Python API integration for extracting and analyzing financial data with automated image processing.</p>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
-        <h2>Skills</h2>
-        <p class="skills"><strong>Languages:</strong> Python • R • SQL • Stata<br>
-        <strong>Data & Tools:</strong> Databricks • FastAPI • Docker • Tableau • Power BI • Excel<br>
-        <strong>ML/NLP:</strong> Machine Learning • spaCy • Hugging Face • PyTorch • TensorFlow<br>
-        <strong>Certifications:</strong> Databricks Fundamentals • AWS Databricks Cloud (2025)</p>
-    </div>
+    <!-- WRITING SECTION -->
+    <section id="writing">
+        <h2>Writing</h2>
+        <p class="bio-text">
+            I write about AI governance, tech policy, climate finance, and data science. My work explores how technical systems intersect with regulatory frameworks and policy decisions.
+        </p>
+        <a href="https://rishisiddharth.substack.com" target="_blank" class="writing-link">Read on Substack →</a>
+    </section>
 
-    <div class="links">
-        <a href="https://github.com/Rsiddharth54" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/rishi-siddharth" target="_blank">LinkedIn</a>
-        <a href="https://rishisiddharth.substack.com" target="_blank">Writing</a>
-    </div>
+    <!-- CONTACT FOOTER -->
+    <footer id="contact">
+      <h2 style="margin-bottom: 30px;">Get in Touch</h2>
+        <div class="contact-links">
+            <a href="https://github.com/Rsiddharth54" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/rishi-siddharth" target="_blank">LinkedIn</a>
+            <a href="mailto:your.email@example.com">Email</a>
+            <a href="https://rishisiddharth.substack.com" target="_blank">Substack</a>
+        </div>
+        <a href="Rishi_Siddharth_Resume2026.pdf" target="_blank" class="resume-download">Download Resume</a>
+        <p class="copyright">© 2026 Rishi Siddharth</p>
+    </footer>
 </body>
 </html>
+
