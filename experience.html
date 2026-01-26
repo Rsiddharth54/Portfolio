@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Rishi Siddharth</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.7;
+            color: #333;
+        }
+        
+        /* NAVIGATION */
+        nav {
+            background: #fff;
+            padding: 30px 10%;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav .logo {
+            font-size: 20px;
+            font-weight: 600;
+            color: #111;
+        }
+        
+        nav .links {
+            display: flex;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 10px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+        
+        nav a:hover {
+            border-bottom: 2px solid #0066cc;
+        }
+        
+        /* CONTENT */
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 100px 40px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 60px;
+            color: #111;
+            font-weight: 600;
+        }
+        
+        .experience-card {
+            margin-bottom: 80px;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 40px;
+            padding-bottom: 80px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .experience-card:last-child {
+            border-bottom: none;
+        }
+        
+        .experience-content h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #111;
+        }
+        
+        .experience-meta {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .experience-meta a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .experience-meta a:hover {
+            text-decoration: underline;
+        }
+        
+        .experience-description {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .experience-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px 5%;
+            }
+            
+            nav .links {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .content {
+                padding: 60px 20px;
+            }
+            
+            h1 {
+                font-size: 36px;
+            }
+            
+            .experience-card {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">RISHI SIDDHARTH</div>
+        <div class="links">
+            <a href="index.html">HOME</a>
+            <a href="bio.html">BIO</a>
+            <a href="experience.html">EXPERIENCE</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="writing.html">WRITING</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Experience</h1>
+        
+        <div class="experience-card">
+            <div class="experience-content">
+                <h2>Data Science Researcher</h2>
+                <p class="experience-meta">
+                    <a href="https://www.transitionpathwayinitiative.org/" target="_blank">Transition Pathway Initiative</a> - London School of Economics<br>
+                    January 2025 - April 2025 • London, UK
+                </p>
+                <p class="experience-description">
+                    Co-developed FastAPI application providing programmatic access to TPI Centre's climate assessments covering 2,000+ publicly listed companies and 85 sovereign entities, supporting 156 global investors managin$87 trillion AUM. Built RESTful endpoints for Management Quality (23 indicators) and Carbon Performance data, implementing Pydantic validation and generating carbon-intensity projections against 1.5°C sectoral benchmarks. Integrated ASCOR sovereign assessment framework (covering 85% of global GHG emissions and 90% of global GDP) with Model Context Protocol (MCP) and RAG features for intelligent data querying. Collaborated with 15-member DS205 team under Dr. Jon Cardoso-Silva and TPI Centre staff, applying test-driven development and CI/CD pipelines to deliver production-grade codebase serving real-world investor use cases.
+                </p>
+            </div>
+            <div class="experience-image">
+                <img src="images/conference.png" alt=Conference presentation">
+            </div>
+        </div>
+        
+        <div class="experience-card">
+            <div class="experience-content">
+                <h2>Product Intern</h2>
+                <p class="experience-meta">
+                    <a href="https://www.intermezzo.ai/" target="_blank">Intermezzo.ai</a><br>
+                    January 2024 - Present • Remote
+                </p>
+                <p class="experience-description">
+                  Fine-tuned large language models for international tax compliance automation, achieving 99% accuracy in entity recognition across OECD, HMRC, and Singapore CPF regulatory frameworks. Analyzed complex international tax requirements and integrated compliance rules into Gross-to-Net API pipeline. Worked directly with product and engineering teams to translate regulatory requirements into technical specifications, ensuring system accuracy across multiple jurisdictions.
+                </p>
+            </div>
+            <div class="experience-image">
+                <img src="images/pentagon_photo.jpeg" alt="Pentagon visit">
+            </div>
+        </div>
+        
+        <div class="experience-card">
+            <div class="experience-content">
+                <h2>Analyst - AI Health Tech Consulting</h2>
+                <p class="experience-meta">
+                    LSE Castore Consulting<br>
+                    December 2024 - May 2025 • London, UK
+                </p>
+                <p class="experience-description">
+                    Built Series A pricing models and conducted competitive analysis across 15+ AI health tech firms for client fundraising strategy. Delivered comprehensive insights on EU and Indonesia market expansion opportunities, healthcare AI adoption trends, and regulatory dynamics. Synthesized market rearch and financial modeling to inform go-to-market strategy and valuation positioning.
+                </p>
+            </div>
+        </div>
+        
+        <div class="experience-card">
+            <div class="experience-content">
+                <h2>Data Science Research Intern</h2>
+                <p class="experience-meta">
+                    <a href="https://www.georgetown.edu/" target="_blank">Georgetown University REU</a> (NSF/NSA Sponsored)<br>
+                    May 2024 - August 2024 • Washington, DC
+                </p>
+                <p class="experience-description">
+                    Developed NLP-based machine learning models to assess geopolitical risk from legislative text, working under NSF and NSA sponsorship. Presented research findings toSF program officers and members of the intelligence community. Applied advanced natural language processing techniques to quantify policy uncertainty and predict geopolitical outcomes. Achieved runner-up placement in undergraduate research competition at Tufts University, competing against 50+ research teams nationwide.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
